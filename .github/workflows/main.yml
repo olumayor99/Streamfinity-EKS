@@ -4,9 +4,9 @@ on:
   push:
     branches: ['main']
     paths-ignore: ['infra/**', '.github/workflows/**', 'README.md', '.gitignore']
-  pull_request:
-    branches: ['main']
-    paths-ignore: ['infra/**', '.github/workflows/**', 'README.md', '.gitignore']
+  #pull_request:
+   # branches: ['main']
+    #paths-ignore: ['infra/**', '.github/workflows/**', 'README.md', '.gitignore']
 
 jobs:
   build-and-push:
