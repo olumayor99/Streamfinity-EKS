@@ -5,8 +5,10 @@ metadata:
   namespace: streamfinity-api
 spec:
   podSelector:
-  ingress:
-    - from:
-      - namespaceSelector:
-          matchLabels:
-            name: streamfinity-api
+  matchLabels:
+      app: streamfinity-api
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress: []
+  egress: []
