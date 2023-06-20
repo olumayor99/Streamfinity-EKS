@@ -16,6 +16,7 @@ spec:
       containers:
         - name: streamfinity-api
           image: streamfinity-api:v1.0.0-beta
+          imagePullPolicy: Always
           securityContext:
             allowPrivilegeEscalation: false
           ports:
