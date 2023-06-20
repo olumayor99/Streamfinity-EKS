@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: streamfinity-api
+  namespace: streamfinity-api
+spec:
+  ingressClassName: nginx
+  rules:
+    - http:
+        paths:
+          - path: "/"
+            pathType: Prefix
+            backend:
+              service:
+                name: streamfinity-api
+                port:
+                  number: 80
