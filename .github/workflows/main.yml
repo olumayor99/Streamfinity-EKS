@@ -2,11 +2,11 @@ name: CI
 
 on:
   push:
-    branches:
-      - main
+    branches: ['main']
+    paths-ignore: ['infra/**', '.github/workflows/**']
   pull_request:
-    branches:
-      - main
+    branches: ['main']
+    paths-ignore: ['infra/**', '.github/workflows/**']
 
 jobs:
   build-and-push:
