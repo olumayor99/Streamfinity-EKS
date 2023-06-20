@@ -19,6 +19,9 @@ spec:
           imagePullPolicy: Always
           securityContext:
             allowPrivilegeEscalation: false
+            capabilities:
+              drop:
+                -ALL
             runAsUser: 11000
           resources:
             limits:
