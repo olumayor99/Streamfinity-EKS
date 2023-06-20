@@ -19,6 +19,7 @@ spec:
           imagePullPolicy: Always
           securityContext:
             allowPrivilegeEscalation: false
+            runAsUser: 11000
           ports:
             - containerPort: 8000
 
