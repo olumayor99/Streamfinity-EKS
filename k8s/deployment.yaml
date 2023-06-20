@@ -26,7 +26,8 @@ spec:
             fsGroup: 13000
             capabilities:
               drop:
-                -ALL
+                - NET_RAW
+                - ALL
           resources:
             limits:
               cpu: "1"
