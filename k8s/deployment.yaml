@@ -16,5 +16,9 @@ spec:
       containers:
         - name: streamfinity-api
           image: streamfinity-api:v1.0.0-beta
+          securityContext:
+            allowPrivilegeEscalation: false
           ports:
             - containerPort: 8000
+
+    
