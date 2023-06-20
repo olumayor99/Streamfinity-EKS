@@ -19,6 +19,9 @@ spec:
           imagePullPolicy: Always
           securityContext:
             allowPrivilegeEscalation: false
+            runAsUser: 11000
+            runAsGroup: 12000
+            fsGroup: 13000
             capabilities:
               drop:
                 -ALL
@@ -31,12 +34,3 @@ spec:
               memory: "256Mi"
           ports:
             - containerPort: 8000
-  podTemplate:
-    metadata:
-      labels:
-        app: streamfinity-api
-    spec:
-      securityContext:
-        runAsUser: 11000
-        runAsGroup: 12000
-        fsGroup: 13000
