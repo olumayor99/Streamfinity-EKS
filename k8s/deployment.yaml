@@ -5,8 +5,6 @@ metadata:
   namespace: streamfinity-api
 spec:
   replicas: 2
-  securityContext:
-    runAsUser: 10500
   selector:
     matchLabels:
       app: streamfinity-api
