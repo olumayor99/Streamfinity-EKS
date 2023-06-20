@@ -2,11 +2,11 @@ name: tflint
 
 on:
   push:
-    branches:
-      - main
+    branches: ['main']
+    paths: ['infra/**']
   pull_request:
-    branches:
-      - main
+    branches: ['main']
+    paths: ['infra/**']
 jobs:
   lint:
 
