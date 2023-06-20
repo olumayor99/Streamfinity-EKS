@@ -1,12 +1,12 @@
-name: CI
+name: Build and Push
 
 on:
   push:
     branches: ['main']
-    paths-ignore: ['infra/**', '.github/workflows/**']
+    paths-ignore: ['infra/**', '.github/workflows/**', 'README.md', '.gitignore']
   pull_request:
     branches: ['main']
-    paths-ignore: ['infra/**', '.github/workflows/**']
+    paths-ignore: ['infra/**', '.github/workflows/**', 'README.md', '.gitignore']
 
 jobs:
   build-and-push:
